@@ -1,4 +1,6 @@
-# Control module
+class PController:
+    def __init__(self, kp):
+        self.kp = kp
 
-def update_control():
-    pass
+    def compute(self, error):
+        return self.kp * error
